@@ -1,2 +1,2 @@
 # Simple website
-live site: 
+live site: https://athenkosimagada.github.io/simple-website/
