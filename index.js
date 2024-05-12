@@ -5,8 +5,10 @@
  * Listerning for a click even on an option
  */
 
+
 const options = document.querySelectorAll('.option-btn');
 const contents = document.querySelectorAll('.content');
+const dateSpan = document.querySelector('.date');
 
 options.forEach((option, index) => {
     option.addEventListener('click', () => {
@@ -20,6 +22,7 @@ options.forEach((option, index) => {
         contents[index].style.display = 'block';
     });
 });
+
 
 (function(){
     emailjs.init("_fpwVG4lyeNRh-Aww");
@@ -48,3 +51,4 @@ function sendEmail() {
     
     return false;
 }
+
