@@ -473,7 +473,7 @@ code .white {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(6, 13, 79, 0.876);
+    background: rgba(8, 10, 28, 0.626);
 }
 
 .project .content a {
