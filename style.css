@@ -8,6 +8,7 @@
     --white-clr: #F0F0F0;
     --black-clr: #000300;
     --grey-clr: #dedede;
+    --dark-grey-clr: #3f3f3f;
     --font-family: "Inter", sans-serif;
 }
 
@@ -119,6 +120,18 @@ nav img {
     width: 150px;
 }
 
+nav .open-menu {
+    aspect-ratio: 1;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--white-clr);
+    cursor: pointer;
+    background-color: var(--dark-grey-clr);
+}
+
 .nav-links {
     flex: 1;
     text-align: right;
@@ -151,6 +164,25 @@ nav img {
     width: 100%;
 }
 
+.nav-links .row {
+    display: flex;
+    justify-content: end;
+    padding-inline: 1rem;
+    padding-top: 2rem;
+}
+
+.nav-links .toogle-btn {
+    aspect-ratio: 1;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--white-clr);
+    cursor: pointer;
+    background-color: var(--dark-grey-clr);
+}
+
 .text-box {
     width: 90%;
     color: var(--white-clr);
@@ -169,6 +201,59 @@ nav img {
     margin: 10px 0 40px;
     font-size: 14px;
     color: var(--white-clr);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding-top: 2rem;
+    }
+
+    nav img {
+        width: 100px;
+    }
+
+    .nav-links {
+        position: absolute;
+        width: 60%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99999;
+
+        transform: translateX(1000px);
+        text-align: left;
+        background: var(--black-clr);
+        transition: 0.5s transform ease-in-out;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        margin-top: 2rem;
+    }
+
+    .nav-links ul li {
+        transition: 0.5s background ease;
+    }
+
+    .nav-links ul li:hover {
+        background: var(--dark-grey-clr);
+    }
+    
+    .nav-links ul li::after {
+        display: none;
+    }
+
+    .nav-links ul li a {
+        font-size: 18px;
+        font-weight: 600;
+    }
 }
 
 /* About styles */
