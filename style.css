@@ -120,16 +120,8 @@ nav img {
     width: 150px;
 }
 
-nav .open-menu {
-    aspect-ratio: 1;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    border-radius: 8px;
-    font-weight: 700;
-    color: var(--white-clr);
-    cursor: pointer;
-    background-color: var(--dark-grey-clr);
+nav .menu-bar{
+    display: none;
 }
 
 .nav-links {
@@ -140,13 +132,13 @@ nav .open-menu {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
     position: relative;
 }
 
 .nav-links ul li a {
     color: var(--white-clr);
     text-decoration: none;
+    padding: 8px 12px;
     font-size: 13px;
 }
 
@@ -164,23 +156,15 @@ nav .open-menu {
     width: 100%;
 }
 
+.nav-links .menu-close {
+    display: none;
+}
+
 .nav-links .row {
     display: flex;
     justify-content: end;
     padding-inline: 1rem;
     padding-top: 2rem;
-}
-
-.nav-links .toogle-btn {
-    aspect-ratio: 1;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    border-radius: 8px;
-    font-weight: 700;
-    color: var(--white-clr);
-    cursor: pointer;
-    background-color: var(--dark-grey-clr);
 }
 
 .text-box {
@@ -212,8 +196,20 @@ nav .open-menu {
         width: 100px;
     }
 
+    nav .menu-bar {
+        aspect-ratio: 1;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        border-radius: 8px;
+        font-weight: 700;
+        color: var(--white-clr);
+        cursor: pointer;
+        background-color: var(--dark-grey-clr);
+    }    
+
     .nav-links {
-        position: absolute;
+        position: fixed;
         width: 60%;
         top: 0;
         right: 0;
@@ -253,6 +249,20 @@ nav .open-menu {
     .nav-links ul li a {
         font-size: 18px;
         font-weight: 600;
+        display: flex;
+        width: 100%;
+    }
+
+    .nav-links .menu-close {
+        aspect-ratio: 1;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        border-radius: 8px;
+        font-weight: 700;
+        color: var(--white-clr);
+        cursor: pointer;
+        background-color: var(--dark-grey-clr);
     }
 }
 
