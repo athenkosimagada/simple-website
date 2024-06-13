@@ -268,6 +268,10 @@ nav .menu-bar{
         cursor: pointer;
         background-color: var(--dark-grey-clr);
     }
+
+    .text-box h1 {
+        font-size: 32px;
+    }
 }
 
 /* About styles */
@@ -334,6 +338,10 @@ code .red {
 
 code .white {
     color: var(--white-clr);
+}
+
+@media screen and (max-width: 768px) {
+
 }
 
 /* Skills, Education and Interests sections */
