@@ -87,6 +87,16 @@ p {
     background: var(--accent-clr);
 }
 
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
+
 /* Header styles */
 
 header:not(.short) {
@@ -341,7 +351,22 @@ code .white {
 }
 
 @media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column-reverse;
+    }
 
+    .about-body {
+        text-align: center;
+        padding-inline: 1rem;
+    }
+
+    .about-image {
+        justify-content: center;
+    }
+
+    .about-follow {
+        justify-content: center;
+    }
 }
 
 /* Skills, Education and Interests sections */
