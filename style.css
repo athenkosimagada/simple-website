@@ -617,7 +617,6 @@ code .white {
 
 .project .content {
     padding: 1rem;
-    opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -628,10 +627,6 @@ code .white {
     display: grid;
     place-items: center;
     z-index: 2;
-}
-
-.project:hover .content {
-    opacity: 1;
 }
 
 .project .content h2 {
