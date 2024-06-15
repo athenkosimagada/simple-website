@@ -89,6 +89,20 @@ p {
 
 @media screen and (max-width: 768px) {
     p {
+        font-size: 1.125rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
         font-size: 1rem;
     }
 
@@ -355,6 +369,12 @@ code .white {
     color: var(--white-clr);
 }
 
+@media screen and (max-width: 1024px) {
+    .about-image img {
+        max-width: 100%; 
+    }
+}
+
 @media screen and (max-width: 768px) {
     .about {
         flex-direction: column-reverse;
@@ -367,6 +387,10 @@ code .white {
 
     .about-image {
         justify-content: center;
+    }
+
+    .about-image img {
+        max-width: 60%; 
     }
 
     .about-follow {
