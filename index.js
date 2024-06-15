@@ -86,3 +86,16 @@ document.addEventListener("click", function (event) {
 menuLinks.forEach((link) => {
   link.addEventListener("click", closeMenu);
 });
+
+
+// Image lazy loading with low and high quality
+const lowQualityImages = document.querySelectorAll('img[data-low][data-high]');
+lowQualityImages.forEach(img => {
+  const highQualitySrc = img.getAttribute('data-high');
+  const highQualityImg = new Image();
+  highQualityImg.src = highQualitySrc;
+
+  highQualityImg.onload = () => {
+    img.src = highQualitySrc;
+  };
+});

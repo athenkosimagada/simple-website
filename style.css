@@ -120,7 +120,7 @@ p {
 header:not(.short) {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assets/banner.jpg);
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
     background-position: center;
     background-size: cover;
     
@@ -130,11 +130,21 @@ header:not(.short) {
 header.short {
     min-height: 50vh;
     width: 100%;
-    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assets/banner.jpg);
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
     background-position: center;
     background-size: cover;
     
     position: relative;
+}
+
+header > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
 }
 
 nav {
@@ -146,6 +156,8 @@ nav {
 
 nav img {
     width: 150px;
+    position: relative;
+    z-index: 999;
 }
 
 nav .menu-bar{
