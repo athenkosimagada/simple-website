@@ -447,6 +447,10 @@ code .white {
     padding: 1rem;
 }
 
+.skill-category  h3 {
+    text-align: center;
+}
+
 .skill-list {
     display: flex;
     flex-direction: column;
