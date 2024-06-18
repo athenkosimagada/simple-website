@@ -382,16 +382,20 @@ code .white {
 }
 
 @media screen and (max-width: 1024px) {
-    .about-image img {
-        max-width: 100%; 
-    }
-}
-
-@media screen and (max-width: 768px) {
     .about {
         flex-direction: column-reverse;
     }
 
+    .about-image img {
+        max-width: 50%; 
+    }
+
+    .about-image {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .about-body {
         text-align: center;
         padding-inline: 1rem;
